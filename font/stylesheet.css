@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'campus_personal_useregular';
+    src: url('campus_personal_use-webfont.woff2') format('woff2'),
+         url('campus_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'badaboom_bbregular';
+    src: url('badabb__-webfont.woff2') format('woff2'),
+         url('badabb__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
