@@ -1,5 +1,6 @@
 # 👓 Connexion à une base de donnée SQL
-> Afficher une table produit dans l'interface client
+> Afficher une table produit dans l'interface client. Ce depôt contient une activité pédagogique 
+> qui a pour but d'apprendre aux étudiants à manipuler la structuration d'une base de donnée et l'affichage des contenus coté client.
 
 ## 🏆 Le produit
 ![machine](./asset/machine.jpg)
