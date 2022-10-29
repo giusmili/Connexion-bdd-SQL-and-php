@@ -1,6 +1,24 @@
-# Connexion à une base de donnée SQL
+# 👓 Connexion à une base de donnée SQL
 > Afficher une table produit dans l'interface client
+
+## 🏆 Le produit
 ![machine](./asset/machine.jpg)
+
+#### 🔑 BDD => table SQL
+
+```sql
+CREATE TABLE `produits` (
+  `id` int(11) NOT NULL,
+  `marque` varchar(255) NOT NULL,
+  `capacite` int(11) NOT NULL,
+  `consommation` varchar(150) NOT NULL,
+  `prix` int(11) NOT NULL,
+  `image` varchar(220) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+```
+#### 💻 Requête php et affichage coté client
 
 ```php
 while($_data = $_response->fetch()){
