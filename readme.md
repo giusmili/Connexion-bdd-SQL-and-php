@@ -33,3 +33,4 @@ while($_data = $_response->fetch()){
 }
 
 ```
+> &copy;  [Giuseppe Militello](https://www.linkedin.com/in/giuseppe-militello-22406ab0/) - All rights reserved for educational purposes only
