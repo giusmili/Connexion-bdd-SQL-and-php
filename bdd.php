@@ -1,6 +1,6 @@
 <!-- http://sharemycode.fr/wih -->
 <?php
-    include_once("./pages/class.inc.php");
+    include_once("./controller/class.inc.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,7 +11,7 @@
     <title><?= title ?></title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= Page::$_logo ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= ControllerBase::$_logo ?>">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./font/stylesheet.css">
@@ -37,7 +37,10 @@
             <ul class="product">
             
                 <?php
-                    include_once "./pages/bdd.inc.php";
+                    
+                    include_once "./controller/bdd.inc.php";
+                    ControllerBdd::bdd();
+                   
                     //ajouter un try catch pour tester la connection bdd
                 
                 ?>
