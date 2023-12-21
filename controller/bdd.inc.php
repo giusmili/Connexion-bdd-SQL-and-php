@@ -1,5 +1,5 @@
 <?php
-    // connexion à la base
+   # connexion à la base
  class ControllerBdd{
    static function bdd(){
 

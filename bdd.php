@@ -1,4 +1,3 @@
-<!-- http://sharemycode.fr/wih -->
 <?php
     include_once("./controller/class.inc.php");
 ?>
@@ -40,7 +39,6 @@
                     
                     include_once "./controller/bdd.inc.php";
                     ControllerBdd::bdd();
-                   
                     //ajouter un try catch pour tester la connection bdd
                 
                 ?>
