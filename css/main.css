@@ -1,5 +1,5 @@
 /* theme */
-
+@import url(./reset.css);
 :root{
     --color-theme-d: #000;
     --colors-theme-b: #2b2a33;

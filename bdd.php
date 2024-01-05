@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./font/stylesheet.css">
     <link rel="stylesheet" href="<?= $_new_page->_css ?>">
-    <link rel="stylesheet" href="./css/reset.css">
+   
    
 </head>
 <body>
@@ -27,7 +27,7 @@
         <section>
             <h2>
             
-                <?= $_new_page->_subtitle ?>
+                <?= ControllerBase::$_subtitle ?>
                 <span class="material-symbols-outlined" aria-hidden="true">
                     shopping_cart
                 </span>
@@ -37,8 +37,8 @@
             
                 <?php
                     
-                    include_once "./controller/bdd.inc.php";
-                    ControllerBdd::bdd();
+                    include_once(__DIR__ .'./controller/bdd.inc.php');
+                  
                     //ajouter un try catch pour tester la connection bdd
                 
                 ?>

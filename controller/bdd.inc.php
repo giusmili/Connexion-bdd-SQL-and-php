@@ -1,15 +1,18 @@
 <?php
    # connexion à la base
  class ControllerBdd{
-   static function bdd(){
+  
+    static function bdd(){
 
       try{
+
          $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+
          $_bdd = new PDO('mysql:host=localhost; 
                          dbname=vente_prod','root','', 
                          array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8', $_pdo_options));
          
-                         $_response = $_bdd->query('SELECT * FROM `produits` WHERE 1 ORDER BY id ASC LIMIT 1 ');
+                         $_response = $_bdd->query('SELECT * FROM `produits` WHERE 1 ORDER BY id ASC LIMIT 10 ');
                         
                         
    
@@ -33,6 +36,6 @@
          die("Error Data base de votre base ".$e->getMessage());
       }
    }
-   
 
 }
+ControllerBdd::bdd();
