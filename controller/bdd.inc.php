@@ -22,12 +22,12 @@
              print_r($_data);
              print "</pre>"; */
    
-             echo "<li>Marque : ".$_data["marque"]."</li>
-                     <li> Capacité : ".$_data["capacite"]." kg<li>
-                     <li> Cosommation : ".$_data["consommation"]." KW<li>
-                     <li> Prix : ".$_data["prix"]." &euro;<li>
-                     <li><img src = ".$_data["image"]." loading=\"lazy\" alt=".$_data["marque"]."><li>";
-         }
+             echo "<li>Marque : ".$_data["marque"]."</li>\n
+                     <li> Capacité : ".$_data["capacite"]." kg<li>\n
+                     <li> Cosommation : ".$_data["consommation"]." KW<li>\n
+                     <li> Prix : ".$_data["prix"]." &euro;<li>\n
+                     <li>\n<img src = ".$_data["image"]." loading=\"lazy\" alt=".$_data["marque"].">\n<li>";
+             }
          
          $_response->closeCursor(); 
    

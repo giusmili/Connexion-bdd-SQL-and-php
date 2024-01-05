@@ -1,5 +1,5 @@
 <?php
-    include_once("./controller/class.inc.php");
+    include_once(__DIR__ ."/controller/class.inc.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -37,7 +37,8 @@
             
                 <?php
                     
-                    include_once(__DIR__ .'./controller/bdd.inc.php');
+                    include_once(__DIR__ .'/controller/bdd.inc.php'); 
+                    // La constante magique __DIR__ assure une certaine sécurité pour le répertoire racine
                   
                     //ajouter un try catch pour tester la connection bdd
                 
