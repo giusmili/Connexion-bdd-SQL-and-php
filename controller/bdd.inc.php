@@ -26,7 +26,7 @@
                      <li> Capacité : ".$_data["capacite"]." kg<li>\n
                      <li> Cosommation : ".$_data["consommation"]." KW<li>\n
                      <li> Prix : ".$_data["prix"]." &euro;<li>\n
-                     <li>\n<img src = ".$_data["image"]." loading=\"lazy\" alt=".$_data["marque"].">\n<li>";
+                  <li>\n<img src = ".$_data['image']." loading=\"lazy\" alt=".$_data['marque'].">\n<li>";
              }
          
          $_response->closeCursor(); 
